@@ -1,0 +1,206 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* FONTS */
+
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;1,200&family=Roboto+Mono:wght@400;600&display=swap');
+
+/* HEADER */
+
+header {
+  background-color: #1e3d59;
+}
+
+.header__inner {
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-around;
+  color: #ff6e40;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 600;
+  
+}
+
+.logo__item {
+  text-transform: uppercase;
+}
+
+.header__item {
+  background: #f5f0e1;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.nav__inner {
+  display: flex;
+  justify-content: space-around;
+  margin-left: -10px;
+}
+
+.nav__item {
+  margin-left: 10px;
+}
+
+
+/* ABOUT ME */
+
+.about__me {
+  display: flex;
+  height: 100vh;
+  background: #f5f0e1;
+  justify-content: space-between;
+}
+
+.info {
+  width: 25%;
+}
+
+.avatar {
+  width: 200px;
+  height: auto;
+ margin: 20px auto;
+  border-radius: 100%;
+}
+
+.profile {
+  width: 75%;
+  font-family: 'Mulish', sans-serif;
+  font-weight: bold;
+}
+
+.about__title {
+  margin: 50px;
+  font-size: 32px;
+  color: #1e3d59;
+}
+
+.about__text {
+  margin: 0 50px;
+}
+
+.skill__scale { 
+  margin: 20px 50px;
+}
+
+.skill__title {
+  font-size: 20px;
+  margin-bottom: 10px;
+
+}
+
+.scale__fill {
+  width: 50%;
+  height: 25px;
+  background: #1e3d59;
+  border-radius: 10px;
+}
+
+.scale__html {
+  width: 0%;
+  max-width: 100%;
+  height: 25px;
+  background: #d2601a;
+  border-radius: 10px;
+  transition: 0.1s;
+  text-align: center;
+  vertical-align: middle;
+  color: #fff1e1;
+  font-family: 'Mulish', sans-serif;
+}
+
+.step__input {
+  border-radius: 0.25rem;
+  border: 1px solid #bdbdbd;
+  width: 50px;
+  color: #525053;
+}
+
+.scale__tools {
+  display: flex;
+  margin-top: 10px;
+  width: 150px;
+  justify-content: space-between;
+}
+
+.button__scale {
+  color: #ff6e40;
+  background: #fff1e1;
+  border: #ff6e40 2px solid;
+  border-radius: 0.25rem;
+}
+
+
+
+
+
